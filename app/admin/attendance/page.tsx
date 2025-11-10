@@ -218,8 +218,7 @@ export default function AttendancePage() {
                             {attendance.member?.last_name || ""}
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            {attendance.member?.member_number ||
-                              attendance.member_number}
+                            {attendance.member?.email || "Sin email"}
                           </p>
                         </div>
                         <div className="text-right">

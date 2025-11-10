@@ -27,9 +27,10 @@ export default function MemberDashboardPage() {
     }
 
     // Mock data del socio
+    const sessionData = JSON.parse(session);
     setMemberData({
       name: "Juan Pérez",
-      member_number: "M001",
+      email: sessionData.email,
       membership: {
         type: "Premium",
         status: "active",
@@ -58,9 +59,7 @@ export default function MemberDashboardPage() {
           <h1 className="text-3xl font-bold tracking-tight text-foreground">
             Bienvenido, {memberData.name}
           </h1>
-          <p className="text-muted-foreground">
-            Número de socio: {memberData.member_number}
-          </p>
+          <p className="text-muted-foreground">Email: {memberData.email}</p>
         </div>
 
         {/* Membership Status */}

@@ -80,7 +80,7 @@ export default function MembershipsTable({
                 members.find((m) => m.id === membership.member_id) || {
                   first_name: "-",
                   last_name: "",
-                  member_number: membership.member_id,
+                  email: membership.member_id,
                 };
               const typeObj =
                 membership.membership_type ||
@@ -90,7 +90,7 @@ export default function MembershipsTable({
                   <TableCell className="font-medium">
                     {memberObj.first_name} {memberObj.last_name}
                     <div className="text-xs text-muted-foreground">
-                      {memberObj.member_number}
+                      {memberObj.email || "Sin email"}
                     </div>
                   </TableCell>
                   <TableCell>

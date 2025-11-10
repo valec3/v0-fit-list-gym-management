@@ -90,8 +90,7 @@ export default function MembersPage() {
     const matchesSearch =
       member.first_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.last_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.email.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.member_number.toLowerCase().includes(searchQuery.toLowerCase());
+      member.email.toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchesStatus =
       statusFilter === "all" || member.status === statusFilter;

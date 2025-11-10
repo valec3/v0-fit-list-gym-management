@@ -134,8 +134,7 @@ export default function PaymentFormDialog({
                   <SelectItem value="__none">-- Sin socio --</SelectItem>
                   {members.map((member) => (
                     <SelectItem key={member.id} value={member.id}>
-                      {member.first_name} {member.last_name} (
-                      {member.member_number})
+                      {member.first_name} {member.last_name} ({member.email})
                     </SelectItem>
                   ))}
                 </SelectContent>

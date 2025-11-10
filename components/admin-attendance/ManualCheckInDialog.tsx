@@ -70,7 +70,7 @@ export default function ManualCheckInDialog({ onCreate }: Props) {
         id: m.id,
         first_name: m.first_name,
         last_name: m.last_name,
-        member_number: m.member_number,
+        email: m.email,
       };
       await onCreate(payload);
       setOpen(false);
@@ -118,7 +118,7 @@ export default function ManualCheckInDialog({ onCreate }: Props) {
                 ) : (
                   members.map((m) => (
                     <SelectItem key={m.id} value={m.id}>
-                      {m.first_name} {m.last_name} — {m.member_number}
+                      {m.first_name} {m.last_name} — {m.email}
                     </SelectItem>
                   ))
                 )}

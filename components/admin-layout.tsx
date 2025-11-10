@@ -29,9 +29,9 @@ const navigation = [
   { name: "Clases", href: "/admin/classes", icon: Calendar },
   { name: "Asistencia", href: "/admin/attendance", icon: UserCheck },
   { name: "Pagos", href: "/admin/payments", icon: BarChart3 },
-  { name: "Reportes", href: "/admin/reports", icon: BarChart3 },
+  // { name: "Reportes", href: "/admin/reports", icon: BarChart3 },
   { name: "Escáner QR", href: "/admin/scanner", icon: QrCode },
-  { name: "Entrenador", href: "/trainer", icon: TrendingUp },
+  // { name: "Entrenador", href: "/trainer", icon: TrendingUp },
 ];
 
 export function AdminLayout({ children }: { children: React.ReactNode }) {
